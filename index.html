@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>FEM | Linguistica - metodi e temi</title>
+	<style>
+			body { color: #000000; font-family: "DejaVu Sans Mono, monospace", monospace; font-size: 10pt }
+			tr:hover td {
+    	background: #fff062 !important;
+			}
+	</style>
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/yadcf/0.9.4/jquery.dataTables.yadcf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.js" integrity="sha256-7QI04ySSWOSntO1zRz4OathEWRGoHz5kLVy+wHkB+UE=" crossorigin="anonymous"></script>
+	<script type="text/javascript" class="init">
+	
+
+$(document).ready(function() {
+        var myTable = $('#example').DataTable(
+        {	
+			paging: false
+			});
+                          yadcf.init(myTable, [
+                                  {column_number : 4, filter_type: "multi_select", select_type : "select2"},
+                                  {column_number : 7, filter_type: "multi_select", select_type : "select2"}
+                                  ],
+                        {
+                            cumulative_filtering: true
+                        }
+                        );
+    });
+
+	</script>
+</head>
+	<body class="wide comments example">
+		<table id="example"  class="display" style="width:100%">
+		<thead>
+			<tr>
+			<th>Nome attività</th>
+			<th>Link all'attività</th>
+			<th>Metodo</th>
+			<th>Obiettivo</th>
+			<th>Target</th>
+			<th>Tema</th>
+			<th>Tempo stimato</th>
+			<th>Disponibile su cellulare</th>
+			<th>Competenze acquisite</th>
+			<th>Aspetti linguistici</th>
+			<th>Strumento</th>
+			<th>Richiesta presenza live?</th>
+			<th>N. max studenti</th>
+			<th>Richiesta connessione internet?</th>
+			<th>Output</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td>Comprensione del testo | Coronavirus dopo</td>
+		<td><a href="https://doccano.fem.digital">Link</a></td>
+		<td>Analisi del testo</td>
+		<td>Comprensione del testo</td>
+		<td>Scuole Secondarie di 2° grado</td>
+		<td>Attualità | Coronavirus</td>
+		<td>3h</td>
+		<td>No</td>
+		<td>Metafore concettuali, Evidenzialità</td>
+		<td>doccano</td>
+		<td>No</td>
+		<td>Nessuno</td>
+		<td>Sì</td>
+		<td>Produzione testo scritto</td>
+		</tr>
+		<tr>
+		<td>Comprensione del testo | Coronavirus prima</td>
+		<td><a href="https://doccano.fem.digital">Link</a></td>
+		<td>Analisi del testo</td>
+		<td>Comprensione del testo</td>
+		<td>Scuole Secondarie di 2° grado</td>
+		<td>Attualità | Coronavirus</td>
+		<td>3h</td>
+		<td>No</td>
+		<td>Metafore concettuali, Evidenzialità</td>
+		<td>doccano</td>
+		<td>No</td>
+		<td>Nessuno</td>
+		<td>Sì</td>
+		<td>Produzione testo scritto</td>
+		</tr>
+		</table>
+	</body>
+</html>
