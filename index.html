@@ -26,6 +26,9 @@ $(document).ready(function() {
 			paging: false
 			});
                           yadcf.init(myTable, [
+								{column_number: 2, select_type: 'select2', select_type_options: 
+									{ width: '150px',minimumResultsForSearch: -1}
+									},
                                   {column_number : 4, filter_type: "multi_select", select_type : "select2"},
                                   {column_number : 7, filter_type: "multi_select", select_type : "select2"}
                                   ],
